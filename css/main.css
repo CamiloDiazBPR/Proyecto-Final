@@ -1,326 +1,179 @@
-/* Reset */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  
-}
-
-body{
-    
-    background-image: url(../img/backgroundwhite.png);
-    font-family: 'Edu VIC WA NT Beginner', cursive;
-    font-family: 'Roboto', sans-serif;
-}
-
-.bg-color-navbar{
-    background-color: rgb(188, 156, 249);
-    color: rgb(205, 211, 216);
-}
-
-.dropdown-menu{
-    background-color: rgb(188, 156, 249);
-}
-
-.container-fluid{
+body {
+  height: 100%;
+  background-image: url(../img/backgroundwhite.png);
+  font-family: "Edu VIC WA NT Beginner", cursive "Roboto", sans-serif; }
+  body header .container-fluid {
     font-family: 'DynaPuff', cursive;
     font-style: italic;
     color: antiquewhite;
-    padding-bottom: 20px;
-      
-}
-
-
-.texto{
+    padding-bottom: 20px; }
+  body header .bg-color-navbar {
+    background-color: #bc9cf9;
+    color: #cdd3d8; }
+  body header .dropdown-menu {
+    background-color: #bc9cf9; }
+  body .texto {
     text-align: center;
     font-weight: bold;
     font-size: 1rem;
     font-style: italic;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
-    padding: 15px;
-}
-
-main{
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
-    grid-template-areas: 
-                        "titulo2" 
-                        "imagen-uno"
-                        "texto-uno"
-                        "imagen-dos"
-                        "texto-dos"
-                        "imagen-tres"
-                        "texto-tres";
-    
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-
-}
-
-.boton-final{
-    display: none;
-}
-
-.titulo2{
+    padding: 15px; }
+  body .titulo2 {
     grid-area: titulo2;
     text-align: center;
     font-weight: bold;
     font-size: 1rem;
     line-height: 2rem;
-    padding: 25px;
-}
+    padding: 25px; }
+  body footer {
+    text-align: center;
+    font-style: italic; }
 
-.imagen-uno{
-    grid-area: imagen-uno;
-}
-
-.top{
+main {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  grid-template-areas: "titulo2"  "imagen-uno" "texto-uno" "imagen-dos" "texto-dos" "imagen-tres" "texto-tres";
+  justify-content: center;
+  align-items: center;
+  justify-items: center; }
+  main .imagen-uno {
+    grid-area: imagen-uno; }
+  main .top {
     position: relative;
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
     -o-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.bottom{
-    position: absolute;
-}
-
-.imagen-uno img.top:hover{
-    opacity: 0;
-}
-
-.imagen-dos{
+    transition: opacity 0.5s ease-in-out; }
+  main .bottom {
+    position: absolute; }
+  main .imagen-uno img.top:hover {
+    opacity: 0; }
+  main .imagen-dos {
     grid-area: imagen-dos;
-    padding: 15px;
-}
-
-.imagen-dos img.top:hover{
-    opacity: 0;
-}
-
-.imagen-tres{
+    padding: 15px; }
+  main .imagen-dos img.top:hover {
+    opacity: 0; }
+  main .imagen-tres {
     grid-area: imagen-tres;
-    padding: 15px;
-}
-
-.imagen-tres img.top:hover{
-    opacity: 0;
-}
-
-.texto-uno{
+    padding: 15px; }
+  main .imagen-tres img.top:hover {
+    opacity: 0; }
+  main .texto-uno {
     grid-area: texto-uno;
     padding: 15px;
     left: 1;
-    font-weight: bold;
-
-}
-
-.texto-dos{
+    font-weight: bold; }
+  main .texto-dos {
     grid-area: texto-dos;
     padding: 15px;
-    font-weight: bold;
-}
-
-.texto-tres{
+    font-weight: bold; }
+  main .texto-tres {
     grid-area: texto-tres;
     padding: 15px;
-    font-weight: bold;
-}
+    font-weight: bold; }
 
+.titulo_redes {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 10px; }
 
-/* ESTILOS DE CONTACTOS - NO TOCAR */
+.instagram {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 5px;
+  font-weight: bold; }
 
-.titulo_redes{
-    text-align: center;
-    font-size: 0.8rem;
-    padding: 10px;
-}
+.facebook {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 5px;
+  font-weight: bold; }
 
-.instagram{
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        padding: 5px;
-        font-weight: bold;
-      
-}
+.formulario {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
-.facebook{
-    display: flex;
-    align-items: center;
-    align-content: center;
+.titulo_formulario {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  font-size: 1.1rem; }
+
+.formulario_textbox {
+  text-align: center; }
+
+.titulo_formulario_interno {
+  text-align: center;
+  padding: 10px; }
+
+.botones_form {
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly; }
+
+@media screen and (min-width: 600px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titulo2 titulo2" "imagen-uno texto-uno" "imagen-dos texto-dos" "imagen-tres texto-tres";
     justify-content: center;
-    padding: 5px;
-    font-weight: bold;
-  
-}
-
-.formulario{
-    padding: 10px;
-    margin: 10px;
-    display: flex;
     align-items: center;
+    justify-items: center;
+    column-gap: 1rem; }
+    main .boton-final {
+      display: block; }
+    main .titulo {
+      font-size: 1.6rem; }
+    main header nav ul li {
+      font-size: 0.9rem; }
+    main .titulo2 {
+      font-size: 1.4rem; }
+    main .texto-uno {
+      font-size: 1.2rem; }
+    main .texto-dos {
+      font-size: 1.2rem; }
+    main .texto-tres {
+      font-size: 1.2rem; }
+    main .titulo_redes {
+      font-size: 0.9rem; }
+    main .titulo_formulario {
+      font-size: 1.3rem; } }
+
+@media screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-areas: "titulo2 titulo2 titulo2 titulo2" "imagen-uno imagen-dos imagen-tres imagen-tres" "texto-uno texto-dos texto-dos texto-tres";
     justify-content: center;
-
-}
-
-.titulo_formulario{
-    text-align: center;
-    margin: 20px;
-    padding: 10px;
-    font-size: 1.1rem;
-}
-
-.formulario_textbox{
-    text-align: center;
-}
-
-.titulo_formulario_interno{
-    text-align: center;
-    padding: 10px;
-}
-
-.botones_form{
-    display: flex;
-    padding: 10px;
-    justify-content: space-evenly;
-}
-
-footer{
-    text-align: center;
-    font-style: italic;
-}
-
-/* media query */
-
-@media screen and (min-width: 600px){
-
-    main{
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:        
-                            "titulo2 titulo2"
-                            "imagen-uno texto-uno"
-                            "imagen-dos texto-dos"
-                            "imagen-tres texto-tres"
-
-
-                            ;
-
-        justify-content: center;
-        align-items: center;
-        justify-items: center;            
-        column-gap: 1rem;
-    }
-
-    .boton-final{
-        display: block;
-    }
-
-    .titulo{
-        font-size: 1.6rem;
-    }
-
-    header nav ul li{
-        font-size: 0.9rem;
-    }
-
-    .titulo2{
-        font-size: 1.4rem;
-    }
-
-    .texto-uno{
-        font-size: 1.2rem;
-    }
-
-    .texto-dos{
-        font-size: 1.2rem;
-    }
-    .texto-tres{
-        font-size: 1.2rem;
-    }
-
-    .titulo_redes{
-        font-size: 0.9rem;
-    }
-
-    .titulo_formulario{
-        font-size: 1.3rem;
-
-    }
-
-
-}
-
-@media screen and (min-width: 1024px){
-
-    main{
-        grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
-        grid-template-areas:        
-                            "titulo2 titulo2 titulo2 titulo2"
-                            "imagen-uno imagen-dos imagen-tres imagen-tres"
-                            "texto-uno texto-dos texto-dos texto-tres"
-
-
-                            ;
-
-        justify-content: center;
-        align-items: center;
-        justify-items: center;            
-  
-    }
-
-    .texto{
-        font-size: 1.5rem;
-    }
-
-    .titulo{
-        font-size: 2.2rem;
-    }
-
-    header nav ul li{
-        font-size: 1.4rem;
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .titulo2{
-        font-size: 1.8rem;
-        margin: 20px;
-    }
-
-    .texto-uno{
-        font-size: 1.4rem;
-    }
-
-    .texto-dos{
-        font-size: 1.4rem;
-    }
-    .texto-tres{
-        font-size: 1.4rem;
-
-    }
-
-    .titulo_redes{
-        font-size: 1.1rem;
-    }
-
-    .titulo_formulario{
-        font-size: 1.8rem;
-
-    }
-
-
-}
-/* Color Theme Swatches in RGBA */
-.My-Color-Theme-1-rgba { color: rgba(220, 62, 237, 1); }
-.My-Color-Theme-2-rgba { color: rgba(177, 64, 247, 1); }
-.My-Color-Theme-3-rgba { color: rgba(124, 70, 224, 1); }
-.My-Color-Theme-4-rgba { color: rgba(80, 64, 247, 1); }
-.My-Color-Theme-5-rgba { color: rgba(62, 94, 237, 1); }
+    align-items: center;
+    justify-items: center; }
+    main .texto {
+      font-size: 1.5rem; }
+    main .titulo {
+      font-size: 2.2rem; }
+    main header nav ul li {
+      font-size: 1.4rem;
+      padding: 10px;
+      margin: 10px; }
+    main .titulo2 {
+      font-size: 1.8rem;
+      margin: 20px; }
+    main .texto-uno {
+      font-size: 1.4rem; }
+    main .texto-dos {
+      font-size: 1.4rem; }
+    main .texto-tres {
+      font-size: 1.4rem; }
+    main .titulo_redes {
+      font-size: 1.1rem; }
+    main .titulo_formulario {
+      font-size: 1.8rem; } }
