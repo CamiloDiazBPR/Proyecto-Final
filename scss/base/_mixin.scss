@@ -1,6 +1,7 @@
-@mixin medidas ($widht, $height){
+@mixin medidas ($width,$height){
 
-    width: $widht;
+    width: $width;
     height: $height;
+    
 
 }
