@@ -6,7 +6,8 @@ body {
     width: 50px;
     height: 80px;
     position: sticky;
-    top: 0; }
+    top: 0;
+    z-index: 100; }
     body header .container-fluid {
       top: 0;
       font-family: 'DynaPuff', cursive;
