@@ -158,6 +158,33 @@ main{
     .imagen-tres img.top:hover{
         opacity: 0;
     }
+
+    .imagen-cuatro{
+        grid-area: imagen-cuatro;
+        padding: 15px;
+    }
+    
+    .imagen-cuatro img.top:hover{
+        opacity: 0;
+    }
+
+    .imagen-cinco{
+        grid-area: imagen-cinco;
+        padding: 15px;
+    }
+    
+    .imagen-cinco img.top:hover{
+        opacity: 0;
+    }
+
+    .imagen-seis{
+        grid-area: imagen-seis;
+        padding: 15px;
+    }
+    
+    .imagen-seis img.top:hover{
+        opacity: 0;
+    }
     
     .texto-uno{
         grid-area: texto-uno;
@@ -177,6 +204,27 @@ main{
     
     .texto-tres{
         grid-area: texto-tres;
+        padding: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .texto-cuatro{
+        grid-area: texto-cuatro;
+        padding: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .texto-cinco{
+        grid-area: texto-cinco;
+        padding: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .texto-seis{
+        grid-area: texto-seis;
         padding: 15px;
         font-weight: bold;
         text-align: center;
@@ -285,6 +333,15 @@ main{
         .texto-tres{
             font-size: 1.2rem;
         }
+        .texto-cuatro{
+            font-size: 1.2rem;
+        }
+        .texto-cinco{
+            font-size: 1.2rem;
+        }
+        .texto-seis{
+            font-size: 1.2rem;
+        }
     
         .titulo_redes{
             font-size: 0.9rem;
@@ -302,11 +359,12 @@ main{
     
 
     main{
-        grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
+        padding-left: 200px;
+        grid-template-columns: 1.5fr 1.5fr 1.5fr;
         grid-template-areas:        
-                            "titulo2 titulo2 titulo2 titulo2"
-                            "imagen-uno imagen-dos imagen-tres imagen-tres"
-                            "texto-uno texto-dos texto-dos texto-tres"
+                            "titulo2 titulo2 titulo2"
+                            "imagen-uno imagen-dos imagen-tres"
+                            "texto-uno texto-dos texto-tres"
 
 
                             ;
@@ -339,6 +397,21 @@ main{
             font-size: 1.4rem;
         }
         .texto-tres{
+            font-size: 1.4rem;
+    
+        }
+
+        .texto-cuatro{
+            font-size: 1.4rem;
+    
+        }
+
+        .texto-cinco{
+            font-size: 1.4rem;
+    
+        }
+
+        .texto-seis{
             font-size: 1.4rem;
     
         }

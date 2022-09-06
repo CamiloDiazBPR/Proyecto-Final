@@ -100,6 +100,21 @@ main {
     padding: 15px; }
   main .imagen-tres img.top:hover {
     opacity: 0; }
+  main .imagen-cuatro {
+    grid-area: imagen-cuatro;
+    padding: 15px; }
+  main .imagen-cuatro img.top:hover {
+    opacity: 0; }
+  main .imagen-cinco {
+    grid-area: imagen-cinco;
+    padding: 15px; }
+  main .imagen-cinco img.top:hover {
+    opacity: 0; }
+  main .imagen-seis {
+    grid-area: imagen-seis;
+    padding: 15px; }
+  main .imagen-seis img.top:hover {
+    opacity: 0; }
   main .texto-uno {
     grid-area: texto-uno;
     padding: 15px;
@@ -113,6 +128,21 @@ main {
     text-align: center; }
   main .texto-tres {
     grid-area: texto-tres;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center; }
+  main .texto-cuatro {
+    grid-area: texto-cuatro;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center; }
+  main .texto-cinco {
+    grid-area: texto-cinco;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center; }
+  main .texto-seis {
+    grid-area: texto-seis;
     padding: 15px;
     font-weight: bold;
     text-align: center; }
@@ -185,6 +215,12 @@ main {
       font-size: 1.2rem; }
     main .texto-tres {
       font-size: 1.2rem; }
+    main .texto-cuatro {
+      font-size: 1.2rem; }
+    main .texto-cinco {
+      font-size: 1.2rem; }
+    main .texto-seis {
+      font-size: 1.2rem; }
     main .titulo_redes {
       font-size: 0.9rem; }
     main .titulo_formulario {
@@ -192,8 +228,9 @@ main {
 
 @media screen and (min-width: 1024px) {
   main {
-    grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr;
-    grid-template-areas: "titulo2 titulo2 titulo2 titulo2" "imagen-uno imagen-dos imagen-tres imagen-tres" "texto-uno texto-dos texto-dos texto-tres";
+    padding-left: 200px;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    grid-template-areas: "titulo2 titulo2 titulo2" "imagen-uno imagen-dos imagen-tres" "texto-uno texto-dos texto-tres";
     justify-content: center;
     align-items: center;
     justify-items: center; }
@@ -211,6 +248,12 @@ main {
     main .texto-dos {
       font-size: 1.4rem; }
     main .texto-tres {
+      font-size: 1.4rem; }
+    main .texto-cuatro {
+      font-size: 1.4rem; }
+    main .texto-cinco {
+      font-size: 1.4rem; }
+    main .texto-seis {
       font-size: 1.4rem; }
     main .titulo_redes {
       font-size: 1.1rem; }
