@@ -14,10 +14,10 @@ body{
 
         @include medidas(50px,80px);
         position: sticky;
+        top: 0;
 
 
         .container-fluid{
-            position: sticky;
             top: 0;
             font-family: 'DynaPuff', cursive;
             font-style: italic;
