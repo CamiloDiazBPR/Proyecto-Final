@@ -6,7 +6,7 @@
 
             {
                 "id": 1,
-                "nombre": "Cuado con varios Papá Noel",
+                "nombre": "Cuadro con varios Papá Noel",
                 "descripcion": "Cuadro de papa noel",
                 "precio": 150000,
                 "stock": 10,
@@ -88,7 +88,7 @@
             },
             {
                 "id": 10,
-                "nombre": "Pendon de renos & Papa Noel",
+                "nombre": "Muñeco pendon de renos & Papa Noel",
                 "descripcion": "Pendon de renos y papa noel",
                 "precio": 135000,
                 "stock": 7,
@@ -97,7 +97,7 @@
             },
             {
                 "id": 11,
-                "nombre": "Pareja de renos",
+                "nombre": "Muñeco de pareja de renos",
                 "descripcion": "Pareja de renos",
                 "precio": 185000,
                 "stock": 1,
@@ -106,7 +106,7 @@
             },
             {
                 "id": 12,
-                "nombre": "Set hojas en porcelanicrom",
+                "nombre": "Decoracion set hojas en porcelanicrom",
                 "descripcion": "Hojas en porcelanicrom",
                 "precio": 70000,
                 "stock": 12,
@@ -115,7 +115,7 @@
             },
             {
                 "id": 13,
-                "nombre": "Reloj de pared en puntillismo",
+                "nombre": "Decoracion reloj de pared en puntillismo",
                 "descripcion": "Reloj de pared en puntillismo",
                 "precio": 70000,
                 "stock": 2,
@@ -124,7 +124,7 @@
             },
             {
                 "id": 14,
-                "nombre": "Dulcero en porcelanicrom",
+                "nombre": "Decoracion dulcero en porcelanicrom",
                 "descripcion": "Dulcero en procelanicrom",
                 "precio": 120000,
                 "stock": 6,
