@@ -1,144 +1,23 @@
+ 
+ //Modulo fetch para traer los articulos de la base de datos
+ 
  class GestionarProductos {
 
     iniciar() {
 
-        productos = [
+        fetch (url)
 
-            {
-                "id": 1,
-                "nombre": "Cuadro con varios Papá Noel",
-                "descripcion": "Cuadro de papa noel",
-                "precio": 150000,
-                "stock": 10,
-                "img": "Cuadro-noeles.jpg",
-                "destacado": 1
-            },
-            {
-                "id": 2,
-                "nombre": "Cuadro de oso",
-                "descripcion": "Cuadro de oso",
-                "precio": 100000,
-                "stock": 10,
-                "img": "Cuadro-oso.jpg",
-                "destacado": 1
-            },
+        .then (respuesta => respuesta.json())
+        .then (resultado =>{
+       
 
-            {
-                "id": 3,
-                "nombre": "Cuadro Noel chimenea",
-                "descripcion": "Cuadro de papa noel en chimenea",
-                "precio": 120000,
-                "stock": 5,
-                "img": "cuadronoel.jpg",
-                "destacado": 0
-            },
-            {
-                "id": 4,
-                "nombre": "Cuadro Sagrada Familia",
-                "descripcion": "Cuadro de la sagrada familia",
-                "precio": 170000,
-                "stock": 3,
-                "img": "Cuadro-sagrada-familia.jpg" ,
-                "destacado": 0
-            },
-            {
-                "id": 5,
-                "nombre": "Cuadro Noel & Reno",
-                "descripcion": "Cuadro noel y reno en patchwork",
-                "precio": 100000,
-                "stock": 5,
-                "img": "cuadropatch.jpg",
-                "destacado": 0
-            },
-            {
-                "id": 6,
-                "nombre": "Juego de cubresillas",
-                "descripcion": "Cubresillas",
-                "precio": 90000,
-                "stock": 12,
-                "img": "cubresilla2.jpg",
-                "destacado": 1
-            },
-            {
-                "id": 7,
-                "nombre": "Cubresillas muñeco de nieve",
-                "descripcion": "Cubresillas muñeco de nieve",
-                "precio": 90000,
-                "stock": 3,
-                "img": "cubresiila1.jpg",
-                "destacado": 0
-            },
-            {
-                "id": 8,
-                "nombre": "Muñeco de nieve",
-                "descripcion": "Muñeco de nieve con bufanda",
-                "precio": 140000,
-                "stock": 6,
-                "img": "nieve1.jpg",
-                "destacado": 1
-            },
-            {
-                "id": 9,
-                "nombre": "Muñeco de nieve & Papa Noel",
-                "descripcion": "Muñeco de nieve & Papa Noel",
-                "precio": 200000,
-                "stock": 4,
-                "img": "nievesanta.jpg",
-                "destacado": 1
-            },
-            {
-                "id": 10,
-                "nombre": "Muñeco pendon de renos & Papa Noel",
-                "descripcion": "Pendon de renos y papa noel",
-                "precio": 135000,
-                "stock": 7,
-                "img": "Pendon-renos.jpg",
-                "destacado": 0
-            },
-            {
-                "id": 11,
-                "nombre": "Muñeco de pareja de renos",
-                "descripcion": "Pareja de renos",
-                "precio": 185000,
-                "stock": 1,
-                "img": "renos-besos.jpg",
-                "destacado": 0
-            },
-            {
-                "id": 12,
-                "nombre": "Decoracion set hojas en porcelanicrom",
-                "descripcion": "Hojas en porcelanicrom",
-                "precio": 70000,
-                "stock": 12,
-                "img": "Hojas-por.jpg",
-                "destacado": 1
-            },
-            {
-                "id": 13,
-                "nombre": "Decoracion reloj de pared en puntillismo",
-                "descripcion": "Reloj de pared en puntillismo",
-                "precio": 70000,
-                "stock": 2,
-                "img": "puntillismo.jpg",
-                "destacado": 1
-            },
-            {
-                "id": 14,
-                "nombre": "Decoracion dulcero en porcelanicrom",
-                "descripcion": "Dulcero en procelanicrom",
-                "precio": 120000,
-                "stock": 6,
-                "img": "Dulcero-porce.jpg",
-                "destacado": 0
-            }
+        productos = resultado.productos;
+        
+        let productosDestacados = productos.filter (prod => prod.destacado == 1);
 
+        this.cargarProductos(productosDestacados);
 
-
-        ]
-
-        let productosDestacados = productos.filter( prod => prod.destacado == 1 );
-
-        this.cargarProductos( productosDestacados );
+    })
         
         this.mostrarCarrito();
         
@@ -146,14 +25,16 @@
              
     }
 
+    
+    //Funcion encargada de cargar los productos relacionados con la busqueda
 
 
-    cargarProductos( productos ) { 
+    cargarProductos(productos) { 
         
         const divProductos    = document.querySelector('#productos');
         divProductos.innerHTML = '';
 
-        if( productos.length === 0 ) {
+        if(productos.length === 0) {
 
             this.mostrarHeader('No se han encontrado productos para su búsqueda');
             return false;
@@ -190,7 +71,7 @@
                                             <a href="javascript:addCarrito(${id_prod})" class="btn btn-primary">Agregar al carrito</a>
                                         </div>`;
     
-                divProductos.appendChild( prod );
+                divProductos.appendChild(prod);
     
             } )    
         }
@@ -199,16 +80,16 @@
 
     buscar( q ) { 
 
-        let resultado = productos.filter( producto => producto.nombre.toLowerCase().includes( q.toLowerCase() ) || producto.descripcion.toLowerCase().includes( q.toLowerCase() ));      
-        this.cargarProductos( resultado );                   
+        let resultado = productos.filter(producto => producto.nombre.toLowerCase().includes(q.toLowerCase() ) || producto.descripcion.toLowerCase().includes( q.toLowerCase()));      
+        this.cargarProductos(resultado);                   
     }
 
+// Metodo encargado de agregar los productos al carrito
 
-
-    addCart( infoProducto ) {
+    addCart(infoProducto) {
         
         
-       const existe = carrito.some( producto => producto.id === infoProducto.id );
+       const existe = carrito.some(producto => producto.id === infoProducto.id );
 
 
        if(existe) 
@@ -257,11 +138,13 @@
        this.actualizarCarrito();
     }
 
+    //Contador de la cantidad de productos en el carrito
+
     contarProductos() { 
 
         let contadorProductos = 0;
 
-        carrito.forEach(( producto ) => {
+        carrito.forEach((producto) => {
 
             contadorProductos = contadorProductos + parseInt(producto.cantidad);
         })
@@ -294,6 +177,8 @@
 
     }
 
+    //Metodo encargado de mostrar el carrito 
+
 
     mostrarCarrito() { 
 
@@ -303,10 +188,10 @@
 
         let total = 0;
 
-        carrito.forEach( ( producto ) => {
+        carrito.forEach( (producto) => {
 
 
-            const { id, nombre, precio, img, cantidad  } = producto;
+            const {id, nombre, precio, img, cantidad} = producto;
 
     
 
@@ -359,15 +244,16 @@
         detalleCarrito.appendChild(row);
     }
 
+    //Metodo encargado de eliminar el articulo
   
 
-    eliminarArticulo( id ) { 
+    eliminarArticulo(id) { 
 
         Swal.fire({
             title: '"Desea eliminar el producto"',
             showCancelButton: true,
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Si, eliminarlo',
+            confirmButtonText: 'Si',
             cancelButtonText: `Cancelar`,
           }).then((result) => {
             
@@ -386,7 +272,7 @@
 
     guardarCarrito() { 
        
-        localStorage.setItem(key_carrito, JSON.stringify( carrito ));
+        localStorage.setItem(key_carrito, JSON.stringify(carrito));
         const dt = DateTime.now();
         let date =  dt.toLocaleString();       
         localStorage.setItem(key_actualizacion,date);
@@ -394,11 +280,12 @@
     }
 
 
-    mostrarHeader( msg ) { 
+    mostrarHeader(msg) { 
         const headerProductos = document.querySelector('#headerProductos');
         headerProductos.innerHTML = msg;
     }
 
+    //Metodo encargado de las alertas que se muestran al usuario
 
 mostrar_notificacion (texto,duracion,posicion){
 

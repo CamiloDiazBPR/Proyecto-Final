@@ -1,18 +1,23 @@
+//Iicializacion del proyecto y variables
+
 let carrito       = [];
 let productos     = [];
 
 let gestor;
-const DateTime = luxon.DateTime
 const key_actualizacion = "ultima_actualizacion";
 const key_carrito = "carrito";
 
+//URL de la base de datos de los productos
+
+const url = '../clases/db.json';
 
 
+//Registro de ultimo ingreso del cliente y guardado en LocalStorage del carrito de compras
 
 document.addEventListener('DOMContentLoaded', () => {
 
 
-    carrito = JSON.parse( localStorage.getItem(key_carrito) ) || [];
+    carrito = JSON.parse(localStorage.getItem(key_carrito) ) || [];
 
     let ingreso = localStorage.getItem(key_actualizacion);
 
@@ -22,8 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
     gestor.iniciar();
 })
 
+//Funcion que agrega los productos al carrito
 
-function addCarrito( id ) {
+
+function addCarrito(id) {
     
     const prod = document.querySelector('#row_'+id);
     let producto = new Producto (   id,
@@ -33,13 +40,14 @@ function addCarrito( id ) {
                                 );
 
    
-    gestor.addCart( producto );
+    gestor.addCart(producto);
 }
 
-function eliminar( id ) {   
-    gestor.eliminarArticulo( id );
+function eliminar(id) {   
+    gestor.eliminarArticulo(id);
 }
 
+//Filtro para la barra de busqueda 
 
 document.querySelector('#buscar').addEventListener('keyup', () => {
 
@@ -56,7 +64,7 @@ document.querySelector('#buscar').addEventListener('keyup', () => {
   
         
         gestor.mostrarHeader('Todos los productos en stock');
-        gestor.cargarProductos( productos );
+        gestor.cargarProductos(productos);
     } 
 
 })

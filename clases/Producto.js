@@ -1,3 +1,5 @@
+// Clase constructora de cada producto
+
 class Producto {
 
 

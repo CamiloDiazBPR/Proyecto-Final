@@ -1,0 +1,134 @@
+ 
+ {
+    "productos": [            
+
+                {
+                    "id": 1,
+                    "nombre": "Cuadro con varios Papá Noel",
+                    "descripcion": "Cuadro de papa noel",
+                    "precio": 150000,
+                    "stock": 10,
+                    "img": "Cuadro-noeles.jpg",
+                    "destacado": 1
+                },
+                {
+                    "id": 2,
+                    "nombre": "Cuadro de oso",
+                    "descripcion": "Cuadro de oso",
+                    "precio": 100000,
+                    "stock": 10,
+                    "img": "Cuadro-oso.jpg",
+                    "destacado": 1
+                },
+    
+                {
+                    "id": 3,
+                    "nombre": "Cuadro Noel chimenea",
+                    "descripcion": "Cuadro de papa noel en chimenea",
+                    "precio": 120000,
+                    "stock": 5,
+                    "img": "cuadronoel.jpg",
+                    "destacado": 0
+                },
+                {
+                    "id": 4,
+                    "nombre": "Cuadro Sagrada Familia",
+                    "descripcion": "Cuadro de la sagrada familia",
+                    "precio": 170000,
+                    "stock": 3,
+                    "img": "Cuadro-sagrada-familia.jpg" ,
+                    "destacado": 0
+                },
+                {
+                    "id": 5,
+                    "nombre": "Cuadro Noel & Reno",
+                    "descripcion": "Cuadro noel y reno en patchwork",
+                    "precio": 100000,
+                    "stock": 5,
+                    "img": "cuadropatch.jpg",
+                    "destacado": 0
+                },
+                {
+                    "id": 6,
+                    "nombre": "Juego de cubresillas",
+                    "descripcion": "Cubresillas",
+                    "precio": 90000,
+                    "stock": 12,
+                    "img": "cubresilla2.jpg",
+                    "destacado": 0
+                },
+                {
+                    "id": 7,
+                    "nombre": "Cubresillas muñeco de nieve",
+                    "descripcion": "Cubresillas muñeco de nieve",
+                    "precio": 90000,
+                    "stock": 3,
+                    "img": "cubresiila1.jpg",
+                    "destacado": 0
+                },
+                {
+                    "id": 8,
+                    "nombre": "Muñeco de nieve",
+                    "descripcion": "Muñeco de nieve con bufanda",
+                    "precio": 140000,
+                    "stock": 6,
+                    "img": "nieve1.jpg",
+                    "destacado": 1
+                },
+                {
+                    "id": 9,
+                    "nombre": "Muñeco de nieve & Papa Noel",
+                    "descripcion": "Muñeco de nieve & Papa Noel",
+                    "precio": 200000,
+                    "stock": 4,
+                    "img": "nievesanta.jpg",
+                    "destacado": 1
+                },
+                {
+                    "id": 10,
+                    "nombre": "Muñeco pendon de renos & Papa Noel",
+                    "descripcion": "Pendon de renos y papa noel",
+                    "precio": 135000,
+                    "stock": 7,
+                    "img": "Pendon-renos.jpg",
+                    "destacado": 0
+                },
+                {
+                    "id": 11,
+                    "nombre": "Muñeco de pareja de renos",
+                    "descripcion": "Pareja de renos",
+                    "precio": 185000,
+                    "stock": 1,
+                    "img": "renos-besos.jpg",
+                    "destacado": 0
+                },
+                {
+                    "id": 12,
+                    "nombre": "Decoracion set hojas en porcelanicrom",
+                    "descripcion": "Hojas en porcelanicrom",
+                    "precio": 70000,
+                    "stock": 12,
+                    "img": "Hojas-por.jpg",
+                    "destacado": 1
+                },
+                {
+                    "id": 13,
+                    "nombre": "Decoracion reloj de pared en puntillismo",
+                    "descripcion": "Reloj de pared en puntillismo",
+                    "precio": 70000,
+                    "stock": 2,
+                    "img": "puntillismo.jpg",
+                    "destacado": 0
+                },
+                {
+                    "id": 14,
+                    "nombre": "Decoracion dulcero en porcelanicrom",
+                    "descripcion": "Dulcero en procelanicrom",
+                    "precio": 120000,
+                    "stock": 6,
+                    "img": "Dulcero-porce.jpg",
+                    "destacado": 0
+                }
+
+    ]
+ }
